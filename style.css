@@ -15,17 +15,22 @@ body {
 
 /* CONTAINER */
 .container {
-    width: 300px;
+    width: 320px;
 }
 
-/* FORM */
+/* FORM BOX */
 .form-box {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
     text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 0.5s ease;
 }
 
+/* TITLE */
 .form-box h2 {
     margin-bottom: 15px;
 }
@@ -36,28 +41,62 @@ input {
     padding: 10px;
     margin: 8px 0;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: none;
 }
 
-/* BUTTON */
+/* INPUT FOCUS */
+input:focus {
+    outline: none;
+    border: 1px solid #3b82f6;
+}
+
+/* REMEMBER */
+.remember {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* BUTTONS */
 button {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    border: none;
     border-radius: 10px;
-    background: #3b82f6;
-    color: white;
+    border: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-btn {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 /* SWITCH TEXT */
 span {
-    color: #3b82f6;
+    color: #60a5fa;
     cursor: pointer;
 }
 
-/* HIDE */
+/* HIDDEN */
 .hidden {
     display: none;
-  }
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
