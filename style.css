@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+    width: 300px;
+}
+
+/* FORM */
+.form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 15px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+}
+
+/* SWITCH TEXT */
+span {
+    color: #3b82f6;
+    cursor: pointer;
+}
+
+/* HIDE */
+.hidden {
+    display: none;
+  }
