@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LOGIN -->
+    <div class="form-box" id="loginBox">
+        <h2>Login</h2>
+
+        <input type="email" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button onclick="togglePassword('loginPassword')">👁️ Show</button>
+
+        <button>Login</button>
+
+        <p>Don't have an account? 
+            <span onclick="showSignup()">Sign Up</span>
+        </p>
+    </div>
+
+    <!-- SIGNUP -->
+    <div class="form-box hidden" id="signupBox">
+        <h2>Sign Up</h2>
+
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+
+        <button onclick="togglePassword('signupPassword')">👁️ Show</button>
+
+        <button>Create Account</button>
+
+        <p>Already have an account? 
+            <span onclick="showLogin()">Login</span>
+        </p>
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+          </html>
